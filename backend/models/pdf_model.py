@@ -5,10 +5,10 @@ from datetime import datetime
 class PDFContent(BaseModel):
     """Model for storing PDF content and metadata."""
     filename: str
-    content: str
-    pages: int
+    content: Optional[str] = None
+    pages: Optional[List[str]] = None
     created_at: datetime = datetime.now()
-    file_path: str
+    file_path: Optional[str] = None
     s3_url: Optional[str] = None
     chunks: Optional[List[str]] = None
 
@@ -28,10 +28,17 @@ class QuestionRequest(BaseModel):
     """Model for question answering request."""
     filename: str
     question: str
-    model: str
+    model: str = "gpt-4"
+    s3_url: Optional[str] = None
 
 class SummaryRequest(BaseModel):
     """Model for summarization request."""
     filename: str
-    model: str
+    model: str = "gpt-4"
+    max_length: int = 1000
+    s3_url: Optional[str] = None
+
+class PDFListItem(BaseModel):
+    filename: str
+    url: Optional[str] = None
     max_length: Optional[int] = 1000 

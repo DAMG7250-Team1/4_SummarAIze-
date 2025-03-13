@@ -1,0 +1,639 @@
+2025-03-13 08:05:25,482 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:05:43,591 - services.pdf_service - ERROR - Error processing PDF Itinerary_Flight (1).pdf: 1 validation error for PDFContent
+pages
+  Input should be a valid list [type=list_type, input_value=4, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+2025-03-13 08:05:43,592 - routes.pdf_routes - ERROR - Error uploading PDF: 1 validation error for PDFContent
+pages
+  Input should be a valid list [type=list_type, input_value=4, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+2025-03-13 08:06:13,395 - routes.pdf_routes - ERROR - Error retrieving PDF content: 404: PDF not found
+2025-03-13 08:07:17,298 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:07:18,671 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:07:19,905 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:07:20,885 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:07:22,328 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:07:23,457 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:07:24,467 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:07:25,533 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:07:28,608 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:07:29,561 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:07:30,487 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:08:08,681 - routes.pdf_routes - ERROR - Error retrieving PDF content: 404: PDF not found
+2025-03-13 08:08:56,219 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:08:57,633 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:08:58,631 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:09:04,468 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:09:05,500 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:09:05,707 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:09:06,700 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:09:24,079 - services.pdf_service - ERROR - Error retrieving PDF content from Redis: 1 validation error for PDFContent
+pages
+  Input should be a valid array [type=list_type, input_value=1, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+2025-03-13 08:09:24,080 - routes.pdf_routes - ERROR - Error retrieving PDF content: 1 validation error for PDFContent
+pages
+  Input should be a valid array [type=list_type, input_value=1, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+2025-03-13 08:09:41,888 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:10:02,279 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:10:03,411 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:10:04,389 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:10:25,408 - routes.pdf_routes - ERROR - Error retrieving PDF content: 404: PDF not found
+2025-03-13 08:11:11,790 - services.pdf_service - ERROR - Error retrieving PDF content from Redis: 1 validation error for PDFContent
+pages
+  Input should be a valid array [type=list_type, input_value=4, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+2025-03-13 08:11:11,790 - routes.pdf_routes - ERROR - Error retrieving PDF content: 1 validation error for PDFContent
+pages
+  Input should be a valid array [type=list_type, input_value=4, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+2025-03-13 08:11:22,069 - routes.pdf_routes - ERROR - Error retrieving PDF content: 404: PDF not found
+2025-03-13 08:12:16,727 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:12:18,445 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:12:19,270 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:12:20,289 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:12:43,646 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:14:38,777 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:14:39,392 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:14:40,387 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:19:22,309 - routes.pdf_routes - ERROR - Error retrieving PDF content: 404: PDF not found
+2025-03-13 08:20:03,396 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:20:04,826 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:05,812 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:08,876 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:20:10,240 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:11,498 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:12,598 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:17,311 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:20:18,331 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:19,312 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:20,403 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:21,615 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:22,700 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:20:37,683 - routes.llm_routes - ERROR - Error summarizing PDF: 404: PDF not found
+2025-03-13 08:21:29,976 - routes.llm_routes - ERROR - Error summarizing PDF: 404: PDF not found
+2025-03-13 08:25:15,017 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:25:35,667 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:25:36,681 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:25:37,747 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:25:39,794 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:25:41,044 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:25:55,375 - routes.llm_routes - ERROR - Error summarizing PDF: 404: PDF not found
+2025-03-13 08:26:00,655 - LiteLLM - WARNING - `litellm.set_verbose` is deprecated. Please set `os.environ['LITELLM_LOG'] = 'DEBUG'` for debug logs.
+2025-03-13 08:26:00,660 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4; provider = openai
+2025-03-13 08:26:00,672 - routes.llm_routes - ERROR - Error summarizing PDF: litellm.APIError: APIError: OpenAIException - 'dict' object has no attribute 'encode'
+2025-03-13 08:26:37,765 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:26:39,345 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:40,369 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:46,472 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:26:47,707 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:48,793 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:49,937 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:52,140 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:26:53,252 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:53,968 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:26:55,233 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:56,228 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:57,046 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:26:58,166 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:26:59,698 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:27:00,746 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:27:20,650 - routes.llm_routes - ERROR - Error summarizing PDF: 404: PDF not found
+2025-03-13 08:28:13,556 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:15,228 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:16,258 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:20,064 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:21,280 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:22,462 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:23,599 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:23,805 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:24,796 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:27,366 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:28,576 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:29,626 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:30,342 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:31,739 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:32,045 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:33,393 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:34,533 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:35,588 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:36,671 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:36,980 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:37,998 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:39,127 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:40,274 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:41,426 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:42,506 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:43,592 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:45,433 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:46,514 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:47,566 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:48,639 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:51,408 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:28:52,453 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:28:53,575 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:30:01,051 - services.pdf_service - ERROR - Error getting PDF content: 'RedisClient' object has no attribute 'get'
+2025-03-13 08:30:01,051 - routes.pdf_routes - ERROR - Error retrieving PDF content: 404: PDF not found
+2025-03-13 08:30:33,317 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:31:46,878 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:31:47,977 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:31:51,973 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:31:53,043 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:31:53,450 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:31:54,476 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:21,835 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:23,352 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:24,421 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:29,968 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:31,163 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:31,781 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:32,858 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:34,832 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:36,099 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:37,225 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:39,467 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:40,880 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:42,046 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:43,184 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:45,130 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:46,262 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:47,260 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:32:47,777 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:32:48,792 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:33:03,767 - services.pdf_service - ERROR - Error getting PDF metadata: object list can't be used in 'await' expression
+2025-03-13 08:33:24,447 - services.pdf_service - ERROR - Error getting PDF metadata: object list can't be used in 'await' expression
+2025-03-13 08:34:01,017 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:02,544 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:03,640 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:08,899 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:10,034 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:11,107 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:12,126 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:13,441 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:14,618 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:19,462 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:20,535 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:21,521 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:24,297 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:25,507 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:26,617 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:29,395 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:30,534 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:31,654 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:32,768 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:33,799 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:35,037 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:36,311 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:37,456 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:38,570 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:39,675 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:43,160 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:34:44,289 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:34:45,430 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:35:07,931 - services.pdf_service - ERROR - Error listing PDFs: 'PDFService' object has no attribute '_list_s3_pdfs'
+2025-03-13 08:35:07,932 - routes.pdf_routes - WARNING - No S3 URL found for DMDD Project.pdf
+2025-03-13 08:35:07,933 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: None
+2025-03-13 08:35:07,933 - services.pdf_service - INFO - Trying path: pdfs/DMDD Project.pdf
+2025-03-13 08:35:07,933 - services.pdf_service - INFO - Trying path: DMDD Project.pdf
+2025-03-13 08:35:07,933 - services.pdf_service - INFO - Trying path: ./DMDD Project.pdf
+2025-03-13 08:35:07,933 - services.pdf_service - INFO - Trying path: backend/pdfs/DMDD Project.pdf
+2025-03-13 08:35:07,933 - services.pdf_service - ERROR - PDF not found: DMDD Project.pdf
+2025-03-13 08:35:39,851 - services.pdf_service - ERROR - Error listing PDFs: 'PDFService' object has no attribute '_list_s3_pdfs'
+2025-03-13 08:36:09,514 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:11,035 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:15,343 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:16,607 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:17,923 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:18,539 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:19,697 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:23,174 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:24,462 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:25,544 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:26,616 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:27,740 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:28,763 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:29,992 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:31,542 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:32,589 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:34,964 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:36,249 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:37,309 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:38,352 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:42,144 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:36:43,263 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:36:44,398 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:09,877 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:12,234 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:13,420 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:19,563 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:20,857 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:22,026 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:23,025 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:24,557 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:25,748 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:26,823 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:27,849 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:28,859 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:31,532 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:32,784 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:33,922 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:35,368 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:36,518 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:37,514 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:38,523 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:39,613 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:40,636 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:42,478 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:43,518 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:37:44,034 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:37:45,070 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:38:10,624 - routes.pdf_routes - INFO - Found S3 URL for Itinerary_Flight.pdf: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=6MIyH13ID%2BZnQfzstlcTfz9sgOc%3D&Expires=1741873090
+2025-03-13 08:38:10,624 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=6MIyH13ID%2BZnQfzstlcTfz9sgOc%3D&Expires=1741873090
+2025-03-13 08:38:10,624 - services.pdf_service - WARNING - Redis error: 'RedisClient' object has no attribute 'redis_client'
+2025-03-13 08:38:10,624 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=6MIyH13ID%2BZnQfzstlcTfz9sgOc%3D&Expires=1741873090
+2025-03-13 08:38:11,049 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:38:56,643 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:38:58,347 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:38:59,425 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:02,807 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:39:04,005 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:05,209 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:06,270 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:07,390 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:08,404 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:09,842 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:39:11,009 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:12,032 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:13,064 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:39:14,096 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:39:36,187 - routes.pdf_routes - INFO - Found S3 URL for Itinerary_Flight.pdf: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=rPIQqkb9Tgykgckm1o38OxmSqbE%3D&Expires=1741873176
+2025-03-13 08:39:36,187 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=rPIQqkb9Tgykgckm1o38OxmSqbE%3D&Expires=1741873176
+2025-03-13 08:39:36,188 - services.pdf_service - WARNING - Redis error: 'RedisClient' object has no attribute 'redis_client'
+2025-03-13 08:39:36,188 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=rPIQqkb9Tgykgckm1o38OxmSqbE%3D&Expires=1741873176
+2025-03-13 08:39:36,595 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:41:38,228 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=3kePogwmZyiKi6n4G4ZGf92GdbM%3D&Expires=1741873294
+2025-03-13 08:41:38,229 - services.pdf_service - WARNING - Redis error: 'RedisClient' object has no attribute 'redis_client'
+2025-03-13 08:41:38,230 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=3kePogwmZyiKi6n4G4ZGf92GdbM%3D&Expires=1741873294
+2025-03-13 08:41:38,571 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:41:38,572 - routes.llm_routes - ERROR - Error summarizing PDF: 'dict' object has no attribute 'content'
+2025-03-13 08:42:14,588 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:42:16,492 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:17,544 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:23,084 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:42:24,136 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:24,882 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:42:26,092 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:27,146 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:28,157 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:31,036 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:42:32,137 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:33,662 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:42:34,746 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:42:48,383 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=4q%2BH7qYtGsovhYSM4GAdUZ4HuaE%3D&Expires=1741873365
+2025-03-13 08:42:48,383 - services.pdf_service - WARNING - Redis error: 'RedisClient' object has no attribute 'redis_client'
+2025-03-13 08:42:48,383 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=4q%2BH7qYtGsovhYSM4GAdUZ4HuaE%3D&Expires=1741873365
+2025-03-13 08:42:48,870 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:42:48,871 - routes.llm_routes - ERROR - Error summarizing PDF: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-13 08:43:22,595 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:43:24,198 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:25,443 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:28,715 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:43:29,888 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:30,980 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:32,025 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:34,276 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:43:35,467 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:45,937 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:43:47,575 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:48,590 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:53,012 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:43:54,315 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:43:56,272 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:43:57,268 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:03,135 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=egFy%2BL%2FTw5lUac4ZTBwshQqAKLg%3D&Expires=1741873435
+2025-03-13 08:44:03,136 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:44:03,136 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=egFy%2BL%2FTw5lUac4ZTBwshQqAKLg%3D&Expires=1741873435
+2025-03-13 08:44:03,603 - services.pdf_service - INFO - Successfully extracted 10836 characters from PDF
+2025-03-13 08:44:04,454 - routes.llm_routes - ERROR - Error summarizing PDF: Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-03-13 08:44:42,230 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:44:43,814 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:44,875 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:48,901 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:44:50,065 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:51,235 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:54,614 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:44:55,808 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:56,954 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:44:59,614 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:45:00,852 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:45:01,471 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:45:02,522 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:45:05,205 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:45:06,321 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:45:08,884 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=3JGj6ZM152vOfXgz%2BLN0cam%2BBdM%3D&Expires=1741873506
+2025-03-13 08:45:08,884 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:45:08,884 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=3JGj6ZM152vOfXgz%2BLN0cam%2BBdM%3D&Expires=1741873506
+2025-03-13 08:45:09,298 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:45:09,300 - routes.llm_routes - WARNING - Model gpt-4 not available. Falling back to gpt-3.5-turbo
+2025-03-13 08:45:09,483 - openai._base_client - INFO - Retrying request to /chat/completions in 0.433583 seconds
+2025-03-13 08:45:10,033 - openai._base_client - INFO - Retrying request to /chat/completions in 0.919314 seconds
+2025-03-13 08:45:11,033 - routes.llm_routes - ERROR - Error summarizing PDF: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:45:54,394 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:45:55,939 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:45:56,969 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:02,195 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:03,280 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:04,818 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:05,864 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:10,388 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:11,656 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:12,840 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:17,341 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:18,397 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:18,911 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:19,926 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:29,531 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:30,992 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:33,156 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:34,281 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:35,206 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:46:36,380 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:37,477 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:46:38,595 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:23,669 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:47:25,234 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:26,286 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:31,827 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:47:32,935 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:34,569 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:47:35,595 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:46,185 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:47:47,843 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:48,930 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:53,548 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:47:55,161 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:47:56,812 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:47:57,837 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:48:17,901 - routes.pdf_routes - INFO - Found S3 URL for Itinerary_Flight.pdf: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=Kqua4jPpWMoYPRhPH%2Bq%2FmhfdILo%3D&Expires=1741873697
+2025-03-13 08:48:17,902 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=Kqua4jPpWMoYPRhPH%2Bq%2FmhfdILo%3D&Expires=1741873697
+2025-03-13 08:48:17,902 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:48:17,902 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=Kqua4jPpWMoYPRhPH%2Bq%2FmhfdILo%3D&Expires=1741873697
+2025-03-13 08:48:18,331 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:48:29,076 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: string
+2025-03-13 08:48:29,076 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:48:29,076 - services.pdf_service - INFO - Downloading PDF from S3 URL: string
+2025-03-13 08:48:29,077 - services.pdf_service - ERROR - Error downloading from S3 URL: Invalid URL 'string': No scheme supplied. Perhaps you meant https://string?
+2025-03-13 08:48:29,077 - services.pdf_service - INFO - Trying direct S3 download with key: Itinerary_Flight.pdf
+2025-03-13 08:48:29,227 - services.pdf_service - ERROR - Error downloading from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+2025-03-13 08:48:29,228 - services.pdf_service - INFO - Trying direct S3 download with key: pdfs/Itinerary_Flight.pdf
+2025-03-13 08:48:29,417 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:48:29,418 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:48:29,418 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:48:29,601 - openai._base_client - INFO - Retrying request to /chat/completions in 0.442027 seconds
+2025-03-13 08:48:30,142 - openai._base_client - INFO - Retrying request to /chat/completions in 0.995842 seconds
+2025-03-13 08:48:31,236 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:48:31,236 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:48:38,135 - routes.llm_routes - ERROR - Error using Gemini model: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2025-03-13 08:49:20,930 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:49:22,558 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:49:23,780 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:49:24,875 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:49:27,749 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:49:28,868 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:49:30,107 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:49:31,282 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:49:32,101 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:49:33,238 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:49:34,064 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:49:35,115 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:51:14,259 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=wjy8f3RqMbtYB3R4as1Opd54KtU%3D&Expires=1741873871
+2025-03-13 08:51:14,261 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:51:14,261 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=wjy8f3RqMbtYB3R4as1Opd54KtU%3D&Expires=1741873871
+2025-03-13 08:51:14,796 - services.pdf_service - INFO - Successfully extracted 10836 characters from PDF
+2025-03-13 08:51:14,799 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:51:14,799 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:51:15,021 - openai._base_client - INFO - Retrying request to /chat/completions in 0.496719 seconds
+2025-03-13 08:51:15,618 - openai._base_client - INFO - Retrying request to /chat/completions in 0.886541 seconds
+2025-03-13 08:51:16,585 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:51:16,586 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:51:26,023 - routes.llm_routes - ERROR - Error using Gemini model: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2025-03-13 08:51:32,061 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=wjy8f3RqMbtYB3R4as1Opd54KtU%3D&Expires=1741873871
+2025-03-13 08:51:32,061 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:51:32,061 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=wjy8f3RqMbtYB3R4as1Opd54KtU%3D&Expires=1741873871
+2025-03-13 08:51:32,466 - services.pdf_service - INFO - Successfully extracted 10836 characters from PDF
+2025-03-13 08:51:32,467 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:51:35,771 - routes.llm_routes - ERROR - Error using Gemini model: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+2025-03-13 08:51:35,771 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:51:35,959 - openai._base_client - INFO - Retrying request to /chat/completions in 0.431370 seconds
+2025-03-13 08:51:36,479 - openai._base_client - INFO - Retrying request to /chat/completions in 0.918115 seconds
+2025-03-13 08:51:37,484 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:52:10,642 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:52:12,190 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:13,250 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:14,274 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:52:15,461 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:16,508 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:18,143 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:52:19,193 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:20,729 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:52:21,781 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:22,802 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:24,030 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:52:25,127 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:52:45,367 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: string
+2025-03-13 08:52:45,368 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:52:45,368 - services.pdf_service - INFO - Downloading PDF from S3 URL: string
+2025-03-13 08:52:45,369 - services.pdf_service - ERROR - Error downloading from S3 URL: Invalid URL 'string': No scheme supplied. Perhaps you meant https://string?
+2025-03-13 08:52:45,369 - services.pdf_service - INFO - Trying direct S3 download with key: Itinerary_Flight.pdf
+2025-03-13 08:52:45,563 - services.pdf_service - ERROR - Error downloading from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+2025-03-13 08:52:45,563 - services.pdf_service - INFO - Trying direct S3 download with key: pdfs/Itinerary_Flight.pdf
+2025-03-13 08:52:45,890 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:52:45,892 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:52:45,892 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:52:46,027 - openai._base_client - INFO - Retrying request to /chat/completions in 0.423642 seconds
+2025-03-13 08:52:46,537 - openai._base_client - INFO - Retrying request to /chat/completions in 0.827775 seconds
+2025-03-13 08:52:47,469 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:52:47,470 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:52:47,900 - routes.llm_routes - ERROR - Error using Gemini model: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:53:18,803 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:53:20,280 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:53:21,294 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:53:27,778 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:53:28,835 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:53:29,242 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:53:30,248 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:53:43,254 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=kg9oqHzXoEIlnxKK97b5DG2RJK0%3D&Expires=1741874020
+2025-03-13 08:53:43,254 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:53:43,254 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=kg9oqHzXoEIlnxKK97b5DG2RJK0%3D&Expires=1741874020
+2025-03-13 08:53:43,734 - services.pdf_service - INFO - Successfully extracted 10836 characters from PDF
+2025-03-13 08:53:43,736 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:53:43,736 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:53:43,975 - openai._base_client - INFO - Retrying request to /chat/completions in 0.424202 seconds
+2025-03-13 08:53:44,479 - openai._base_client - INFO - Retrying request to /chat/completions in 0.999747 seconds
+2025-03-13 08:53:45,570 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:53:45,571 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:53:46,002 - routes.llm_routes - ERROR - Error using Gemini model: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:54:14,889 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:16,464 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:17,519 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:22,389 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:23,709 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:24,755 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:30,415 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:31,496 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:33,236 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:34,512 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:40,919 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:42,032 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:43,104 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:49,769 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:50,866 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:54:51,172 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:54:52,266 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:04,375 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=8JL6UAlWDeszPRdzRL67FM8SsH8%3D&Expires=1741874101
+2025-03-13 08:55:04,375 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:55:04,375 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=8JL6UAlWDeszPRdzRL67FM8SsH8%3D&Expires=1741874101
+2025-03-13 08:55:04,838 - services.pdf_service - INFO - Successfully extracted 10836 characters from PDF
+2025-03-13 08:55:04,840 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:55:04,840 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:55:04,984 - openai._base_client - INFO - Retrying request to /chat/completions in 0.436073 seconds
+2025-03-13 08:55:05,500 - openai._base_client - INFO - Retrying request to /chat/completions in 0.979166 seconds
+2025-03-13 08:55:06,571 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:55:06,571 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:55:06,812 - routes.llm_routes - INFO - Google API Key: AIzaS...adWgw
+2025-03-13 08:55:06,812 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-13 08:55:06,812 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-13 08:55:07,013 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:55:07,013 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-13 08:55:07,075 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:55:07,075 - routes.llm_routes - INFO - Trying Gemini REST API directly
+2025-03-13 08:55:07,250 - routes.llm_routes - INFO - Gemini REST API response status: 404
+2025-03-13 08:55:07,250 - routes.llm_routes - ERROR - Gemini REST API error: 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-03-13 08:55:30,122 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:31,715 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:32,771 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:37,567 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:38,665 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:39,177 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:40,270 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:40,734 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:41,910 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:42,966 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:44,201 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:45,329 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:51,497 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:52,660 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:53,764 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:56,624 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-13 08:55:57,773 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:55:58,862 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-13 08:56:36,355 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:56:36,355 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:56:36,355 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:56:36,774 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:56:36,777 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:56:36,948 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-13 08:56:36,948 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-13 08:56:36,948 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-13 08:56:37,226 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:56:37,226 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-13 08:56:37,341 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:56:37,341 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-13 08:56:38,309 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-13 08:56:54,670 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:56:54,670 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:56:54,670 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:56:55,327 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:56:55,328 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:56:55,328 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-13 08:56:55,328 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-13 08:56:55,328 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-13 08:56:55,510 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:56:55,510 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-13 08:56:55,562 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:56:55,563 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-13 08:56:56,041 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-13 08:57:11,994 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:57:11,994 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:57:11,994 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:57:12,418 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:57:12,419 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:57:12,419 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:57:12,575 - openai._base_client - INFO - Retrying request to /chat/completions in 0.416418 seconds
+2025-03-13 08:57:13,076 - openai._base_client - INFO - Retrying request to /chat/completions in 0.988748 seconds
+2025-03-13 08:57:14,140 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:57:14,140 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:57:14,140 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-13 08:57:14,141 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-13 08:57:14,141 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-13 08:57:14,318 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:57:14,319 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-13 08:57:14,380 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:57:14,380 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-13 08:57:15,279 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-13 08:57:21,290 - services.pdf_service - INFO - Getting content for PDF: Itinerary_Flight.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:57:21,290 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:57:21,291 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/Itinerary_Flight.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=5bP%2BKIuo79MgZlXP9Mq1He6d7Go%3D&Expires=1741874194
+2025-03-13 08:57:21,580 - services.pdf_service - INFO - Successfully extracted 3262 characters from PDF
+2025-03-13 08:57:21,581 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:57:21,581 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:57:21,714 - openai._base_client - INFO - Retrying request to /chat/completions in 0.491230 seconds
+2025-03-13 08:57:22,282 - openai._base_client - INFO - Retrying request to /chat/completions in 0.988602 seconds
+2025-03-13 08:57:23,349 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:57:23,349 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:57:23,349 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-13 08:57:23,350 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-13 08:57:23,350 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-13 08:57:23,531 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:57:23,532 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-13 08:57:23,587 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:57:23,587 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-13 08:57:24,188 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-13 08:58:43,924 - services.pdf_service - INFO - Getting content for PDF: DMDD Project.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=%2FMV4ClEh%2BPZ7Cbk0xMsivluRzmc%3D&Expires=1741874194
+2025-03-13 08:58:43,924 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-13 08:58:43,925 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/DMDD%20Project.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=%2FMV4ClEh%2BPZ7Cbk0xMsivluRzmc%3D&Expires=1741874194
+2025-03-13 08:58:44,380 - services.pdf_service - INFO - Successfully extracted 10836 characters from PDF
+2025-03-13 08:58:44,381 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-13 08:58:44,381 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-13 08:58:44,710 - openai._base_client - INFO - Retrying request to /chat/completions in 0.393083 seconds
+2025-03-13 08:58:45,186 - openai._base_client - INFO - Retrying request to /chat/completions in 0.928428 seconds
+2025-03-13 08:58:46,195 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-13 08:58:46,196 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-13 08:58:46,196 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-13 08:58:46,197 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-13 08:58:46,197 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-13 08:58:46,376 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:58:46,376 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-13 08:58:46,438 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-13 08:58:46,439 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-13 08:58:47,236 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash

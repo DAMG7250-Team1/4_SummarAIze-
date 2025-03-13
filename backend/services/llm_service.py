@@ -44,6 +44,21 @@ MODEL_MAPPINGS = {
 
 class LLMService:
     def __init__(self):
+        # Configure LiteLLM with your API keys
+        litellm.api_key = {
+            "openai": settings.OPENAI_API_KEY,
+            "anthropic": settings.ANTHROPIC_API_KEY,
+            "google": settings.GOOGLE_API_KEY,
+            "deepseek": settings.DEEPSEEK_API_KEY,
+        }
+        
+        # Set up logging for token usage
+        litellm.set_verbose = True
+        
+        # Available models mapping
+        self.models = settings.AVAILABLE_MODELS
+        self.default_model = settings.DEFAULT_MODEL
+        
         self.chunk_overlap = 200  # characters of overlap between chunks
 
     async def generate_summary(self, filename: str, model: str, max_length: int = 1000) -> Dict:
@@ -71,9 +86,19 @@ class LLMService:
                 api_key=model_config["api_key"]
             )
 
+            # Log token usage
+            input_tokens = response.usage.prompt_tokens
+            output_tokens = response.usage.completion_tokens
+            total_cost = self._calculate_cost(model, input_tokens, output_tokens)
+            
+            logger.info(f"Summary generated. Input tokens: {input_tokens}, Output tokens: {output_tokens}, Cost: ${total_cost:.6f}")
+
             return {
                 "summary": response.choices[0].message.content,
-                "usage": response.usage
+                "model": model,
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+                "cost": total_cost
             }
 
         except Exception as e:
@@ -107,9 +132,19 @@ class LLMService:
                 api_key=model_config["api_key"]
             )
 
+            # Log token usage
+            input_tokens = response.usage.prompt_tokens
+            output_tokens = response.usage.completion_tokens
+            total_cost = self._calculate_cost(model, input_tokens, output_tokens)
+            
+            logger.info(f"Answer generated. Input tokens: {input_tokens}, Output tokens: {output_tokens}, Cost: ${total_cost:.6f}")
+
             return {
                 "answer": response.choices[0].message.content,
-                "usage": response.usage
+                "model": model,
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+                "cost": total_cost
             }
 
         except Exception as e:
@@ -144,4 +179,25 @@ Answer:"""
         # you would implement semantic search or similarity matching here.
         return chunks
 
+    def _calculate_cost(self, model: str, input_tokens: int, output_tokens: int) -> float:
+        """Calculate the cost of API usage based on token counts."""
+        # Define pricing for different models (per 1000 tokens)
+        pricing = {
+            "gpt-4": {"input": 0.03, "output": 0.06},
+            "gemini-pro": {"input": 0.00125, "output": 0.00375},
+            "claude-3": {"input": 0.015, "output": 0.075},
+            "deepseek-chat": {"input": 0.0005, "output": 0.0015},
+            "grok-1": {"input": 0.0005, "output": 0.0015},
+        }
+        
+        # Get pricing for the model or use default pricing
+        model_pricing = pricing.get(model, {"input": 0.01, "output": 0.02})
+        
+        # Calculate cost
+        input_cost = (input_tokens / 1000) * model_pricing["input"]
+        output_cost = (output_tokens / 1000) * model_pricing["output"]
+        
+        return input_cost + output_cost
+
+# Create a singleton instance
 llm_service = LLMService() 
