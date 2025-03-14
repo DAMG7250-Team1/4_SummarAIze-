@@ -30,9 +30,17 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 def upload_file(file):
-    files = {"file": file}
-    response = requests.post(f"{API_URL}/api/pdf/upload", files=files)
-    return response.json()
+    try:
+        files = {"file": file}
+        st.write(f"Attempting to upload to: {API_URL}/api/pdf/upload")  # Debug log
+        response = requests.post(f"{API_URL}/api/pdf/upload", files=files)
+        st.write(f"Response status code: {response.status_code}")  # Debug log
+        if response.status_code != 200:
+            st.write(f"Error response: {response.text}")  # Debug log
+        return response.json()
+    except Exception as e:
+        st.error(f"Upload error: {str(e)}")
+        return {"success": False, "error": str(e)}
 
 def get_pdf_list():
     """Get list of processed PDFs."""
@@ -198,8 +206,11 @@ def main():
     # PDF Upload Section
     uploaded_file = st.file_uploader("Upload a new PDF", type=['pdf'])
     if uploaded_file:
+        st.write(f"File name: {uploaded_file.name}")  # Debug log
+        st.write(f"File size: {uploaded_file.size} bytes")  # Debug log
         with st.spinner("Processing PDF..."):
             result = upload_file(uploaded_file)
+            st.write(f"Upload result: {result}")  # Debug log
             if result:
                 if result.get("success", False):
                     st.success("PDF uploaded and processed successfully!")
