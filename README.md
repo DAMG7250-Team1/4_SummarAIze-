@@ -95,8 +95,6 @@ ChatGPT
 
 Perplexity
 
-Cursor
-
 Claude
 
 
