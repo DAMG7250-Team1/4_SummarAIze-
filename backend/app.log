@@ -637,3 +637,257 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2025-03-13 08:58:46,438 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 2025-03-13 08:58:46,439 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
 2025-03-13 08:58:47,236 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-14 03:27:29,536 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<StreamConsumer.start() done, defined at /Users/sahilkasliwal/Desktop/SummarAIze-/backend/services/stream_consumer.py:21> exception=ConnectionError('Error 1 connecting to redis-19917.c15.us-east-1-2.ec2.redns.redis-cloud.com:19917. [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:992).')>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/connection.py", line 747, in _connect
+    sslsock = context.wrap_socket(sock, server_hostname=self.host)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sahilkasliwal/Desktop/SummarAIze-/backend/services/stream_consumer.py", line 27, in start
+    redis_client.create_consumer_group("llm_events", "analytics_group")
+  File "/Users/sahilkasliwal/Desktop/SummarAIze-/backend/redis_client.py", line 70, in create_consumer_group
+    self.redis.xgroup_create(stream_name, group_name, mkstream=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/commands/core.py", line 3719, in xgroup_create
+    return self.execute_command(*pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/connection.py", line 1086, in get_connection
+    connection.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/redis/connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 1 connecting to redis-19917.c15.us-east-1-2.ec2.redns.redis-cloud.com:19917. [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:992).
+2025-03-14 03:28:02,193 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:03,962 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:03,962 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:05,289 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:05,289 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:09,427 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:10,742 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:10,742 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:11,033 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:12,335 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:12,335 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:22,239 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:24,166 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:24,166 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:24,700 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:26,575 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:26,575 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:51,233 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:53,010 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:53,010 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:28:54,517 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:28:55,948 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:28:55,948 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:29:29,870 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:29:31,723 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:29:31,724 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:29:33,042 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:29:33,043 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:29:33,471 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:29:34,913 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:29:34,913 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:29:36,241 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:29:36,241 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:29:57,921 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:30:00,902 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:30:00,902 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:30:41,763 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:30:43,661 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:30:43,661 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:30:44,962 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:30:44,962 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:30:46,514 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:30:46,514 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:33:30,017 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:37:48,808 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:37:48,808 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:37:50,095 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:37:50,096 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:37:51,381 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:37:51,381 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:37:52,056 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:37:53,385 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:37:53,385 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:37:59,518 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:38:04,357 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:38:04,357 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:56:31,879 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:56:33,792 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:56:33,792 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:56:35,011 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:56:35,012 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:56:38,396 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:56:39,638 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:56:39,638 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:56:40,867 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:56:40,867 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:57:54,281 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:57:56,467 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:57:56,467 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:57:57,850 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:57:57,850 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:57:59,177 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:57:59,177 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:58:00,538 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:58:00,538 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:58:47,731 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:58:49,566 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:58:49,566 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:58:50,883 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:58:50,884 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:58:52,237 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:58:52,237 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 03:58:53,419 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 03:58:54,683 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 03:58:54,684 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:00:00,185 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:00:02,102 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:00:02,103 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:00:03,391 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:00:03,391 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:00:04,797 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:00:04,797 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:00:07,694 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:00:09,069 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:00:09,069 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:05:28,435 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:05:30,332 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:05:30,333 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:10:15,854 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:10:17,564 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:10:17,564 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:10:18,848 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:10:18,848 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:12:24,673 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:12:26,395 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:12:26,395 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:12:27,575 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:12:28,807 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:12:28,807 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:14:11,228 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:14:12,939 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:14:12,939 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 04:14:13,366 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 04:14:14,635 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 04:14:14,636 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:42:12,128 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:42:12,128 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:52:53,794 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 12:52:55,728 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:52:55,729 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:52:57,209 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 12:52:58,483 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:52:58,484 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:53:01,336 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 12:53:02,518 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:53:02,518 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:53:03,226 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 12:53:04,518 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:53:04,518 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:53:06,381 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 12:53:07,677 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:53:07,678 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 12:53:08,515 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 12:53:09,719 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 12:53:09,719 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 13:08:05,453 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 13:08:05,454 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 13:08:21,067 - services.pdf_service - INFO - Getting content for PDF: AMZN-Q3-2024_Earnings_removed.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/AMZN-Q3-2024_Earnings_removed.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=cvy0SdkEExpw9DApNUeeXaWiBGU%3D&Expires=1741975698
+2025-03-14 13:08:21,067 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-14 13:08:21,067 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/AMZN-Q3-2024_Earnings_removed.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=cvy0SdkEExpw9DApNUeeXaWiBGU%3D&Expires=1741975698
+2025-03-14 13:08:21,599 - services.pdf_service - INFO - Successfully extracted 32265 characters from PDF
+2025-03-14 13:08:21,600 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-14 13:08:21,600 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-14 13:08:22,755 - openai._base_client - INFO - Retrying request to /chat/completions in 0.376459 seconds
+2025-03-14 13:08:23,333 - openai._base_client - INFO - Retrying request to /chat/completions in 0.796748 seconds
+2025-03-14 13:08:24,318 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-14 13:08:24,319 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-14 13:08:24,697 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-14 13:08:24,697 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-14 13:08:24,697 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-14 13:08:24,966 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-14 13:08:24,966 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-14 13:08:25,060 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-14 13:08:25,060 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-14 13:08:26,155 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-14 13:27:26,842 - services.pdf_service - INFO - Getting content for PDF: AMZN-Q3-2024_Earnings_removed.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/AMZN-Q3-2024_Earnings_removed.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=GcaqKLK1NpPhrtTj2yy3VmCao9g%3D&Expires=1741976754
+2025-03-14 13:27:26,843 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-14 13:27:26,843 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/AMZN-Q3-2024_Earnings_removed.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=GcaqKLK1NpPhrtTj2yy3VmCao9g%3D&Expires=1741976754
+2025-03-14 13:27:27,566 - services.pdf_service - INFO - Successfully extracted 32265 characters from PDF
+2025-03-14 13:27:27,567 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-14 13:27:27,567 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-14 13:27:28,148 - openai._base_client - INFO - Retrying request to /chat/completions in 0.430433 seconds
+2025-03-14 13:27:28,751 - openai._base_client - INFO - Retrying request to /chat/completions in 0.751493 seconds
+2025-03-14 13:27:30,008 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-14 13:27:30,009 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-14 13:27:30,009 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-14 13:27:30,015 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-14 13:27:30,016 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-14 13:27:30,229 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-14 13:27:30,229 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-14 13:27:30,304 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-14 13:27:30,304 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-14 13:27:31,157 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-14 13:29:35,556 - services.pdf_service - INFO - Getting content for PDF: AMZN-Q3-2024_Earnings_removed.pdf, S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/AMZN-Q3-2024_Earnings_removed.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=GcaqKLK1NpPhrtTj2yy3VmCao9g%3D&Expires=1741976754
+2025-03-14 13:29:35,556 - services.pdf_service - WARNING - Redis error: the JSON object must be str, bytes or bytearray, not coroutine
+2025-03-14 13:29:35,556 - services.pdf_service - INFO - Downloading PDF from S3 URL: https://llm-pdf-processing.s3.amazonaws.com/pdfs/AMZN-Q3-2024_Earnings_removed.pdf?AWSAccessKeyId=AKIAS74TL3UBE6LYYJCB&Signature=GcaqKLK1NpPhrtTj2yy3VmCao9g%3D&Expires=1741976754
+2025-03-14 13:29:36,033 - services.pdf_service - INFO - Successfully extracted 32265 characters from PDF
+2025-03-14 13:29:36,034 - routes.llm_routes - WARNING - Model gpt-4 not available. Will try available models.
+2025-03-14 13:29:36,034 - routes.llm_routes - INFO - Attempting to use model: gpt-3.5-turbo
+2025-03-14 13:29:36,307 - openai._base_client - INFO - Retrying request to /chat/completions in 0.385405 seconds
+2025-03-14 13:29:36,891 - openai._base_client - INFO - Retrying request to /chat/completions in 0.988893 seconds
+2025-03-14 13:29:38,089 - routes.llm_routes - WARNING - Error using model gpt-3.5-turbo: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-03-14 13:29:38,089 - routes.llm_routes - INFO - Attempting to use model: gemini-pro
+2025-03-14 13:29:38,089 - routes.llm_routes - INFO - Using API key from settings: AIzaS...adWgw
+2025-03-14 13:29:38,090 - routes.llm_routes - INFO - Successfully configured Google Generative AI API
+2025-03-14 13:29:38,090 - routes.llm_routes - INFO - Trying Gemini model name: gemini-pro
+2025-03-14 13:29:38,314 - routes.llm_routes - ERROR - Error with Gemini model name gemini-pro: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-14 13:29:38,315 - routes.llm_routes - INFO - Trying Gemini model name: gemini-1.0-pro
+2025-03-14 13:29:38,383 - routes.llm_routes - ERROR - Error with Gemini model name gemini-1.0-pro: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-14 13:29:38,384 - routes.llm_routes - INFO - Trying Gemini model name: gemini-2.0-flash
+2025-03-14 13:29:39,011 - routes.llm_routes - INFO - Successfully generated content with Gemini model: gemini-2.0-flash
+2025-03-14 13:43:27,218 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 13:43:29,223 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 13:43:29,225 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 13:43:30,457 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 13:43:30,457 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 13:46:04,786 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 13:46:09,173 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 13:46:09,173 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 13:46:13,205 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 13:46:15,321 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 13:46:15,322 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:08:30,155 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 14:08:31,919 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:08:31,919 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:08:33,209 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:08:33,209 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:08:34,445 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:08:34,445 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:22:37,270 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 14:22:45,522 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:22:45,523 - services.stream_consumer - INFO - Started consuming from Redis streams

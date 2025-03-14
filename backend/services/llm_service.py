@@ -50,6 +50,7 @@ class LLMService:
             "anthropic": settings.ANTHROPIC_API_KEY,
             "google": settings.GOOGLE_API_KEY,
             "deepseek": settings.DEEPSEEK_API_KEY,
+            "grok": settings.GROK_API_KEY,
         }
         
         # Set up logging for token usage
@@ -61,9 +62,12 @@ class LLMService:
         
         self.chunk_overlap = 200  # characters of overlap between chunks
 
-    async def generate_summary(self, filename: str, model: str, max_length: int = 1000) -> Dict:
+    async def generate_summary(self, filename: str, model: str = None, max_length: int = 1000) -> Dict:
         """Generate a summary of the PDF content."""
         try:
+            # Use provided model or default model from settings
+            model = model or self.default_model
+            
             pdf_content = await pdf_service.get_pdf_content(filename)
             if not pdf_content:
                 raise ValueError(f"PDF {filename} not found")
@@ -72,11 +76,13 @@ class LLMService:
             prompt = self._create_summary_prompt(pdf_content.content, max_length)
             
             # Get model configuration
-            model_config = MODEL_MAPPINGS.get(model, MODEL_MAPPINGS["gpt-4"])
+            model_config = MODEL_MAPPINGS.get(model, MODEL_MAPPINGS["gemini-pro"])
             
             # Ensure we have an API key
             if not model_config["api_key"]:
-                raise ValueError(f"No API key configured for model {model}")
+                logger.warning(f"No API key configured for model {model}, falling back to gemini-pro")
+                model = "gemini-pro"
+                model_config = MODEL_MAPPINGS["gemini-pro"]
             
             # Generate summary using LLM
             response = await completion(
@@ -91,7 +97,7 @@ class LLMService:
             output_tokens = response.usage.completion_tokens
             total_cost = self._calculate_cost(model, input_tokens, output_tokens)
             
-            logger.info(f"Summary generated. Input tokens: {input_tokens}, Output tokens: {output_tokens}, Cost: ${total_cost:.6f}")
+            logger.info(f"Summary generated using {model}. Input tokens: {input_tokens}, Output tokens: {output_tokens}, Cost: ${total_cost:.6f}")
 
             return {
                 "summary": response.choices[0].message.content,
@@ -105,9 +111,12 @@ class LLMService:
             logger.error(f"Error generating summary for {filename}: {str(e)}")
             raise
 
-    async def answer_question(self, filename: str, question: str, model: str) -> Dict:
+    async def answer_question(self, filename: str, question: str, model: str = None) -> Dict:
         """Answer a question about the PDF content."""
         try:
+            # Use provided model or default model from settings
+            model = model or self.default_model
+            
             pdf_content = await pdf_service.get_pdf_content(filename)
             if not pdf_content:
                 raise ValueError(f"PDF {filename} not found")
@@ -119,11 +128,13 @@ class LLMService:
             prompt = self._create_qa_prompt(question, relevant_chunks)
             
             # Get model configuration
-            model_config = MODEL_MAPPINGS.get(model, MODEL_MAPPINGS["gpt-4"])
+            model_config = MODEL_MAPPINGS.get(model, MODEL_MAPPINGS["gemini-pro"])
             
             # Ensure we have an API key
             if not model_config["api_key"]:
-                raise ValueError(f"No API key configured for model {model}")
+                logger.warning(f"No API key configured for model {model}, falling back to gemini-pro")
+                model = "gemini-pro"
+                model_config = MODEL_MAPPINGS["gemini-pro"]
             
             # Generate answer using LLM
             response = await completion(
@@ -137,7 +148,7 @@ class LLMService:
             output_tokens = response.usage.completion_tokens
             total_cost = self._calculate_cost(model, input_tokens, output_tokens)
             
-            logger.info(f"Answer generated. Input tokens: {input_tokens}, Output tokens: {output_tokens}, Cost: ${total_cost:.6f}")
+            logger.info(f"Answer generated using {model}. Input tokens: {input_tokens}, Output tokens: {output_tokens}, Cost: ${total_cost:.6f}")
 
             return {
                 "answer": response.choices[0].message.content,

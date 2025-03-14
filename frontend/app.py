@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Backend URL
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = os.getenv("BACKEND_URL", "https://fastapi-service-827844445674.us-central1.run.app")
 
 # Initialize session state
 if "selected_model" not in st.session_state:
