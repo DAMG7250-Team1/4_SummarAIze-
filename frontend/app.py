@@ -29,20 +29,10 @@ if "pdfs" not in st.session_state:
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-def upload_pdf(file) -> Optional[dict]:
-    """Upload PDF file to backend."""
-    if file is None:
-        return None
-    
-    try:
-        files = {"file": (file.name, file.getvalue(), "application/pdf")}
-        response = requests.post(f"{API_URL}/api/pdf/upload", files=files)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            return {"success": False, "error": f"Upload failed with status code: {response.status_code}"}
-    except Exception as e:
-        return {"success": False, "error": str(e)}
+def upload_file(file):
+    files = {"file": file}
+    response = requests.post(f"{API_URL}/api/pdf/upload", files=files)
+    return response.json()
 
 def get_pdf_list():
     """Get list of processed PDFs."""
@@ -209,7 +199,7 @@ def main():
     uploaded_file = st.file_uploader("Upload a new PDF", type=['pdf'])
     if uploaded_file:
         with st.spinner("Processing PDF..."):
-            result = upload_pdf(uploaded_file)
+            result = upload_file(uploaded_file)
             if result:
                 if result.get("success", False):
                     st.success("PDF uploaded and processed successfully!")
