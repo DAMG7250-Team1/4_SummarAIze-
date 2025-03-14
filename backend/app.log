@@ -891,3 +891,13 @@ redis.exceptions.ConnectionError: Error 1 connecting to redis-19917.c15.us-east-
 2025-03-14 14:22:37,270 - services.stream_consumer - INFO - Stopped consuming from Redis streams
 2025-03-14 14:22:45,522 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
 2025-03-14 14:22:45,523 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:44:10,503 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 14:44:12,239 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:44:12,240 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:44:13,616 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:44:13,616 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:44:17,985 - services.stream_consumer - INFO - Stopped consuming from Redis streams
+2025-03-14 14:44:19,237 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:44:19,238 - services.stream_consumer - INFO - Started consuming from Redis streams
+2025-03-14 14:44:20,493 - redis_client - INFO - Consumer group analytics_group already exists for stream llm_events
+2025-03-14 14:44:20,493 - services.stream_consumer - INFO - Started consuming from Redis streams

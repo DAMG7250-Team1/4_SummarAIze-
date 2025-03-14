@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Backend URL
-BACKEND_URL = os.getenv("BACKEND_URL", "https://fastapi-service-827844445674.us-central1.run.app")
+API_URL = "https://fastapi-service-827844445674.us-central1.run.app"
 
 # Initialize session state
 if "selected_model" not in st.session_state:
@@ -36,7 +36,7 @@ def upload_pdf(file) -> Optional[dict]:
     
     try:
         files = {"file": (file.name, file.getvalue(), "application/pdf")}
-        response = requests.post(f"{BACKEND_URL}/api/pdf/upload", files=files)
+        response = requests.post(f"{API_URL}/api/pdf/upload", files=files)
         if response.status_code == 200:
             return response.json()
         else:
@@ -47,7 +47,7 @@ def upload_pdf(file) -> Optional[dict]:
 def get_pdf_list():
     """Get list of processed PDFs."""
     try:
-        response = requests.get(f"{BACKEND_URL}/api/pdf/list")
+        response = requests.get(f"{API_URL}/api/pdf/list")
         if response.status_code == 200:
             pdfs = response.json()
             if not pdfs:
@@ -66,7 +66,7 @@ def get_pdf_content(filename: str) -> Optional[dict]:
         # Extract just the filename without the path
         simple_filename = filename.split('/')[-1] if '/' in filename else filename
         
-        response = requests.get(f"{BACKEND_URL}/api/pdf/r", params={"filename": simple_filename})
+        response = requests.get(f"{API_URL}/api/pdf/r", params={"filename": simple_filename})
         if response.status_code == 200:
             return response.json()
         else:
@@ -98,7 +98,7 @@ def get_summary(filename: str, model: str = "gpt-4", max_length: int = 1000) -> 
         
         # Send the request
         response = requests.post(
-            f"{BACKEND_URL}/api/llm/summarize",
+            f"{API_URL}/api/llm/summarize",
             json=payload
         )
         
@@ -134,7 +134,7 @@ def ask_question(filename: str, question: str, model: str = "gpt-4") -> Optional
         
         # Send the request
         response = requests.post(
-            f"{BACKEND_URL}/api/llm/ask",
+            f"{API_URL}/api/llm/ask",
             json=payload
         )
         
@@ -158,7 +158,7 @@ def check_pdf_exists(filename: str) -> bool:
         # Extract just the filename without the path
         simple_filename = filename.split('/')[-1] if '/' in filename else filename
         
-        response = requests.get(f"{BACKEND_URL}/api/pdf/exists", params={"filename": simple_filename})
+        response = requests.get(f"{API_URL}/api/pdf/exists", params={"filename": simple_filename})
         if response.status_code == 200:
             return response.json().get("exists", False)
         return False
@@ -288,7 +288,7 @@ def main():
 
     with tab2:
         st.header("Ask Questions About Selected PDF")
-        if st.session_state.selected_pdf:
+        if st.session_state.selected_pdf: 
             # Display summary if available
             if st.session_state.api_response and "summary" in st.session_state.api_response:
                 with st.expander("Document Summary", expanded=False):
