@@ -228,23 +228,23 @@ def main():
         with st.spinner("Loading PDFs..."):
             st.session_state.pdfs = get_pdf_list()
     
-    # Create columns for the PDF list
+    # Create a cleaner PDF list display
     if st.session_state.pdfs:
+        st.write("Available PDFs:")
         for pdf in st.session_state.pdfs:
-            col1, col2, col3 = st.columns([3, 1, 1])
+            col1, col2 = st.columns([4, 1])
             filename = pdf.get('filename', 'Unnamed')
-            # Extract just the filename without the path
             display_name = filename.split('/')[-1] if '/' in filename else filename
             
             with col1:
                 if st.button(f"📄 {display_name}", key=f"select_{filename}"):
                     st.session_state.selected_pdf = filename
                     st.session_state.current_s3_url = pdf.get('url')
+            
             with col2:
-                pass
-            with col3:
                 if pdf.get('url'):
-                    st.markdown(f"[View PDF]({pdf['url']})")
+                    st.button("🔍 View", key=f"view_{filename}", 
+                             on_click=lambda url=pdf['url']: webbrowser.open_new_tab(url))
     else:
         st.info("No PDFs available. Upload one to get started!")
 

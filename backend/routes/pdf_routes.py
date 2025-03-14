@@ -17,20 +17,45 @@ settings = get_settings()
 async def upload_pdf(file: UploadFile = File(...)):
     """Upload and process a PDF file."""
     try:
-        if not file.filename.endswith('.pdf'):
-            raise HTTPException(status_code=400, detail="File must be a PDF")
-
-        contents = await file.read()
-        pdf_content = await pdf_service.process_pdf(contents, file.filename)
-
-        return PDFResponse(
-            filename=pdf_content.filename,
-            message="PDF processed successfully",
-            success=True
+        # Save file temporarily
+        temp_path = f"temp/{file.filename}"
+        os.makedirs("temp", exist_ok=True)
+        
+        with open(temp_path, "wb") as buffer:
+            content = await file.read()
+            buffer.write(content)
+        
+        # Upload to S3
+        s3_client = boto3.client('s3',
+            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
+            region_name=os.getenv('AWS_REGION')
         )
-
+        
+        bucket_name = os.getenv('S3_BUCKET_NAME')
+        s3_path = f"pdfs/{file.filename}"
+        
+        # Upload file to S3
+        s3_client.upload_file(temp_path, bucket_name, s3_path)
+        
+        # Generate presigned URL
+        s3_url = s3_client.generate_presigned_url('get_object',
+            Params={'Bucket': bucket_name, 'Key': s3_path},
+            ExpiresIn=3600  # URL valid for 1 hour
+        )
+        
+        # Clean up temp file
+        os.remove(temp_path)
+        
+        return PDFResponse(
+            filename=file.filename,
+            message="PDF processed successfully",
+            success=True,
+            s3_url=s3_url
+        )
+        
     except Exception as e:
-        logger.error(f"Error uploading PDF: {str(e)}")
+        logger.error(f"Error processing PDF: {str(e)}")
         return PDFResponse(
             filename=file.filename,
             message="Failed to process PDF",
