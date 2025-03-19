@@ -109,11 +109,11 @@ Team Members
 Contributions
 
 Husain
-33%
+10%
 
 Sahil Kasliwal
-33%
+80%
 
 Dhrumil Patel
-33%
+10%
 
