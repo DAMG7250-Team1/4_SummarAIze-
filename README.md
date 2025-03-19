@@ -104,16 +104,4 @@ Perplexity
 Claude
 
 
-Team Members
-
-Contributions
-
-Husain
-10%
-
-Sahil Kasliwal
-80%
-
-Dhrumil Patel
-10%
 
