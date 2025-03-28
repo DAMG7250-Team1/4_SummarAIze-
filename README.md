@@ -1,8 +1,8 @@
 **Assignment 4 - Part 1**
 
-Frontend : :https://damg7250-team1-summaraize--frontendapp-t8lyy7.streamlit.app/
+Frontend :https://kdmrblkavnkd4knwyasezm.streamlit.app/
 
-Backend :https://fastapi-service-827844445674.us-central1.run.app/docs
+Backend :https://fastapi-service-827844445674.us-central1.run.app
 
 Codelabs : https://codelabs-preview.appspot.com/?file_id=1CzLO2g8Nt5spoWhd93fCFAgUCLF3XXoUGDYSjcCY9z8/edit?tab=t.0#0
 
